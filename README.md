@@ -16,3 +16,24 @@ php artisan migrate
 Rode o projeto:
 php artisan serve
 
+Ele estará disponível em:
+http://127.0.0.1:8000/
+
+E, para acessar o graphql, entre em:
+http://127.0.0.1:8000/graphql-playground
+
+Execute a query:
+
+{
+  users(
+first: 10
+page: 1
+  ) {
+    data {
+    id
+    name
+      email
+    }
+  }
+}
+
